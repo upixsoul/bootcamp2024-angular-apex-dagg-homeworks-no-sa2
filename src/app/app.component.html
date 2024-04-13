@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h2>
+    9 Routing
+  </h2>
+  <button><a [routerLink]="['/']" routerLinkActive="router-link-active" >Main</a></button><span></span>
+  <button><a [routerLink]="['/number1']" routerLinkActive="router-link-active" >Number 1</a></button><span></span>
+  <button><a [routerLink]="['/number1/hello']" routerLinkActive="router-link-active" >Number1 slug</a></button><span></span>
+  <button><a [routerLink]="['/number2']" routerLinkActive="router-link-active" >Number 2</a></button>
+</div>
+<ng-component *ngIf="router.url !='/'">
+  <router-outlet></router-outlet>
+</ng-component>
